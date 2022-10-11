@@ -1,7 +1,7 @@
 import io
 import json
 
-from mock import faker, transactions_faker
+from factory import faker, transactions_faker
 
 with io.open("bulkData.file", "w+", buffering=20*(1024**2)) as file:    
     for i in range(1, int(1e3)): 
